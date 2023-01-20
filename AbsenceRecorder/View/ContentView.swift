@@ -8,8 +8,10 @@
 import SwiftUI
 
 struct ContentView: View {
+    let division = Division.examples[0]
+    
     var body: some View {
-        Text("Hello, world!")
+        Text(division)
             .padding()
     }
 }
