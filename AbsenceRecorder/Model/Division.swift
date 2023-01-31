@@ -15,13 +15,14 @@ class Division {
         self.code = code
     }
     
-    //#if DEBUG
+    #if DEBUG
     static func createDivision(code: String, of size: Int) -> Division {
         let division = Division(code: code)
         
         // loop as many times as the parameter size says to create students and add them to the students property
-        for i in 0 ..< size {
-            division.students.append(Student(forename: "first\(i)", surname: "second\(i)", birthday: "2005-2-2" ))
+        for i in 0 ... size {
+            let student = Student(forename: "first\(i)", surname: "second\(i)", birthday: Date())
+            division.students.append(student)
         }
                 
         return division
@@ -30,7 +31,7 @@ class Division {
                            Division.createDivision(code: "CMdpW-3", of: 10),
                            Division.createDivision(code: "CMdaY-5", of: 10),
                            Division.createDivision(code: "CCheZ-1", of: 12)]
-    //#endif
+    #endif
     func displayDivision() -> String {
         
         return ""
