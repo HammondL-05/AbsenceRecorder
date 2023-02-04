@@ -22,6 +22,10 @@
 		36D6078E298C6A3500C59753 /* RootTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36D6078D298C6A3500C59753 /* RootTabView.swift */; };
 		36D60790298C6BE800C59753 /* StatisticsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36D6078F298C6BE700C59753 /* StatisticsView.swift */; };
 		36D60792298C6D0400C59753 /* StateController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36D60791298C6D0400C59753 /* StateController.swift */; };
+		36D60794298D8CEF00C59753 /* AbsenceItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36D60793298D8CEF00C59753 /* AbsenceItem.swift */; };
+		36D60796298D8FC100C59753 /* StudentAbsence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36D60795298D8FC100C59753 /* StudentAbsence.swift */; };
+		36D60798298D924100C59753 /* Absence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36D60797298D924100C59753 /* Absence.swift */; };
+		36D6079A298D95DD00C59753 /* DivisionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36D60799298D95DD00C59753 /* DivisionTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +64,10 @@
 		36D6078D298C6A3500C59753 /* RootTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootTabView.swift; sourceTree = "<group>"; };
 		36D6078F298C6BE700C59753 /* StatisticsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatisticsView.swift; sourceTree = "<group>"; };
 		36D60791298C6D0400C59753 /* StateController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StateController.swift; sourceTree = "<group>"; };
+		36D60793298D8CEF00C59753 /* AbsenceItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AbsenceItem.swift; sourceTree = "<group>"; };
+		36D60795298D8FC100C59753 /* StudentAbsence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentAbsence.swift; sourceTree = "<group>"; };
+		36D60797298D924100C59753 /* Absence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Absence.swift; sourceTree = "<group>"; };
+		36D60799298D95DD00C59753 /* DivisionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DivisionTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -133,6 +141,7 @@
 			isa = PBXGroup;
 			children = (
 				36D60766297AE02900C59753 /* AbsenceRecorderTests.swift */,
+				36D60799298D95DD00C59753 /* DivisionTests.swift */,
 			);
 			path = AbsenceRecorderTests;
 			sourceTree = "<group>";
@@ -151,6 +160,8 @@
 			children = (
 				36D60781297AEAA400C59753 /* Student.swift */,
 				36D60783297AEB1C00C59753 /* Division.swift */,
+				36D60795298D8FC100C59753 /* StudentAbsence.swift */,
+				36D60797298D924100C59753 /* Absence.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -163,6 +174,7 @@
 				36D6078B298C687700C59753 /* AbsenceView.swift */,
 				36D6078D298C6A3500C59753 /* RootTabView.swift */,
 				36D6078F298C6BE700C59753 /* StatisticsView.swift */,
+				36D60793298D8CEF00C59753 /* AbsenceItem.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -308,12 +320,15 @@
 				36D60758297AE02100C59753 /* DivisionsView.swift in Sources */,
 				36D60788298978BE00C59753 /* Date.swift in Sources */,
 				36D6078E298C6A3500C59753 /* RootTabView.swift in Sources */,
+				36D60796298D8FC100C59753 /* StudentAbsence.swift in Sources */,
 				36D60782297AEAA400C59753 /* Student.swift in Sources */,
+				36D60794298D8CEF00C59753 /* AbsenceItem.swift in Sources */,
 				36D60790298C6BE800C59753 /* StatisticsView.swift in Sources */,
 				36D60784297AEB1C00C59753 /* Division.swift in Sources */,
 				36D60756297AE02100C59753 /* AbsenceRecorderApp.swift in Sources */,
 				36D6078A29897DF700C59753 /* DivisionItem.swift in Sources */,
 				36D6078C298C687800C59753 /* AbsenceView.swift in Sources */,
+				36D60798298D924100C59753 /* Absence.swift in Sources */,
 				36D60792298C6D0400C59753 /* StateController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -322,6 +337,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				36D6079A298D95DD00C59753 /* DivisionTests.swift in Sources */,
 				36D60767297AE02900C59753 /* AbsenceRecorderTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
