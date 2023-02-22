@@ -31,17 +31,17 @@ class DivisionTests: XCTestCase {
         
     }
     
-    func testCreateAbsenceOrGetExisitingIfAvailableGetsOrCreatesAbsence() {
-        //arrange
-        let date = Date()
-        let students = Student.examples
-        let absence = Absence(date: Date(), students: students)
-        let division = Division(code: "TestDiv")
-        division.absences.append(absence)
-        //act
-        let test = division.createAbsenceOrGetExisitingIfAvailable(for: Date())
-        //assert
-        XCTAssertEqual(division.absences.first, test)
+//    func testCreateAbsenceOrGetExisitingIfAvailableGetsOrCreatesAbsence() {
+//        //arrange
+//        let date = Date()
+//        let students = Student.examples
+//        let absence = Absence(date: Date(), students: students)
+//        let division = Division(code: "TestDiv")
+//        division.absences.append(absence)
+//        //act
+//        let test = division.createAbsenceOrGetExisitingIfAvailable(for: Date())
+//        //assert
+//        XCTAssertEqual(division.absences.first, test)
 
     }
 

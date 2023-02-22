@@ -17,7 +17,9 @@ struct DivisionsView: View {
                 NavigationLink(destination: AbsenceView(absence: division.createAbsenceOrGetExisitingIfAvailable(for: currentDate))) {
                 DivisionItem(division: division)
                 }
+                
             }
+            .onAppear(perform: { state.saveToFile() })
             .navigationTitle(currentDate.getShortDate())
             .toolbar {
                 ToolbarItem(placement: .navigationBarLeading) {
